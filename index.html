@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Komunitas Teknologi</title>
+</head>
+<body>
+    <header>
+        <h1>Formulir Pendaftaran Komunitas Teknologi</h1>
+        <p>Silakan isi data diri Anda dengan lengkap untuk bergabung dalam komunitas teknologi kami.</p>
+    </header>
+
+    <main>
+        <form action="submit.html" method="post" enctype="multipart/form-data" autocomplete="on">
+            
+            <fieldset>
+                <legend>Data Pribadi</legend>
+
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required><br><br>
+
+                <label for="password">Kata Sandi:</label><br>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required><br><br>
+
+                <label for="usia">Usia:</label><br>
+                <input type="number" id="usia" name="usia" min="13" max="100" placeholder="Contoh: 20" required><br><br>
+
+                <label for="tgl">Tanggal Lahir:</label><br>
+                <input type="date" id="tgl" name="tanggal_lahir" required><br><br>
+
+                <p>Jenis Kelamin:</p>
+                <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+
+                <p>Minat:</p>
+                <input type="checkbox" id="ai" name="minat" value="AI">
+                <label for="ai">AI</label>
+
+                <input type="checkbox" id="web" name="minat" value="Web">
+                <label for="web">Web</label>
+
+                <input type="checkbox" id="iot" name="minat" value="IoT">
+                <label for="iot">IoT</label>
+
+                <input type="checkbox" id="game" name="minat" value="Game">
+                <label for="game">Game</label><br><br>
+
+                <label for="telp">Nomor Telepon:</label><br>
+                <input type="tel" id="telp" name="telepon" placeholder="08xxxxxxxxxx" pattern="[0-9]{10,13}" required><br><br>
+
+                <label for="portfolio">Link Portofolio:</label><br>
+                <input type="url" id="portfolio" name="portofolio" placeholder="https://contoh.com"><br><br>
+
+                <label for="foto">Upload Foto Profil:</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tindakan</legend>
+                <button type="reset">Reset</button>
+                <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Komunitas Teknologi Indonesia</p>
+    </footer>
+</body>
+</html>
