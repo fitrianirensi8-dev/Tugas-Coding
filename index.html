@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Komunitas Teknologi</title>
+</head>
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <h1>Formulir Pendaftaran Komunitas Teknologi</h1>
+        <p>Silakan isi data diri Anda dengan lengkap untuk bergabung dalam komunitas teknologi kami.</p>
+    </header>
+
+    <!-- Bagian Utama (Form) -->
+    <main>
+        <!-- Formulir menggunakan method POST -->
+        <form action="submit.html" method="post" enctype="multipart/form-data" autocomplete="on">
+            
+            <!-- Fieldset pertama: Data Pribadi -->
+            <fieldset>
+                <legend>Data Pribadi</legend>
+
+                <!-- Nama Lengkap -->
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Alamat Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required><br><br>
+
+                <!-- Password -->
+                <label for="password">Kata Sandi:</label><br>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" minlength="8" required><br><br>
+
+                <!-- Usia -->
+                <label for="usia">Usia:</label><br>
+                <input type="number" id="usia" name="usia" min="13" max="100" placeholder="Contoh: 20" required><br><br>
+
+                <!-- Tanggal Lahir -->
+                <label for="tgl">Tanggal Lahir:</label><br>
+                <input type="date" id="tgl" name="tanggal_lahir" required><br><br>
+
+                <!-- Jenis Kelamin -->
+                <p>Jenis Kelamin:</p>
+                <input type="radio" id="laki" name="gender" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+            </fieldset>
+
+            <!-- Fieldset kedua: Informasi Tambahan -->
+            <fieldset>
+                <legend>Informasi Tambahan</legend>
+
+                <!-- Checkbox Minat -->
+                <p>Minat:</p>
+                <input type="checkbox" id="ai" name="minat" value="AI">
+                <label for="ai">AI</label>
+
+                <input type="checkbox" id="web" name="minat" value="Web">
+                <label for="web">Web</label>
+
+                <input type="checkbox" id="iot" name="minat" value="IoT">
+                <label for="iot">IoT</label>
+
+                <input type="checkbox" id="game" name="minat" value="Game">
+                <label for="game">Game</label><br><br>
+
+                <!-- Nomor Telepon -->
+                <label for="telp">Nomor Telepon:</label><br>
+                <input type="tel" id="telp" name="telepon" placeholder="08xxxxxxxxxx" pattern="[0-9]{10,13}" required><br><br>
+
+                <!-- Link Portofolio -->
+                <label for="portfolio">Link Portofolio:</label><br>
+                <input type="url" id="portfolio" name="portofolio" placeholder="https://contoh.com"><br><br>
+
+                <!-- Upload Foto Profil -->
+                <label for="foto">Upload Foto Profil:</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
+            </fieldset>
+
+            <!-- Tombol Reset dan Submit -->
+            <fieldset>
+                <legend>Tindakan</legend>
+                <button type="reset">Reset</button>
+                <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Komunitas Teknologi Indonesia</p>
+    </footer>
+</body>
+</html>
